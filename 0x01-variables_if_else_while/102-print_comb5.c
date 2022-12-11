@@ -12,7 +12,7 @@ int main(void)
 
 	for (m = 0; n <= 99; m++)
 	{
-		for(n = 0; n <= 99; n++;)
+		for (n = 0; n <= 99; n++;)
 		{
 			if (m < n && m != n)
 			{

@@ -12,7 +12,7 @@ int main(void)
 
 	while (cst <= 'z')
 	{
-		if (cst != 'q' && cst 1= 'e')
+		if (cst != 'q' && cst != 'e')
 		{
 			putchar(cst);
 		}

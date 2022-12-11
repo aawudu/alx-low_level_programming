@@ -28,3 +28,4 @@ int main(void)
 		printf("%d random number is %s\n", n , "zero");
 	}
 	return (0);
+}

@@ -17,7 +17,7 @@ int main(void)
 			if (m < n && m != n)
 			{
 				putchar((m % 10) + '0');
-				putchar((n / 10) + '0');
+				putchar((n % 10) + '0');
 				putchar(' ');
 				putchar((m / 10) + '0');
 				putchar((n % 10) + '0');

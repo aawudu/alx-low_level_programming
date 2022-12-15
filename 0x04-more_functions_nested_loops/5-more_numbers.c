@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * more_numbers - print 10 by the numbers from 0 to 9
- * Return: 10 x number from 0 to 9
+ * more_numbers - print 10 by the numbers from 0 to 14
+ * Return: 10 x number from 0 to 14
  */
 void more_numbers(void)
 {
@@ -11,7 +11,7 @@ void more_numbers(void)
 	{
 		for (y = 0; y <= 14; y++)
 		{
-			if (y > 0)
+			if (y > 9)
 			{
 				_putchar((y / 10) + '0');
 			}

@@ -8,22 +8,18 @@
   */
 char *_strcat(char *dest, char *src)
 {
-/* Find the end of the dest string */
-	char *end = dest;
+	int dlent = 0, k;
 
-	while (*end)
+	while (dest[dlent])
 	{
-		end++;
+		dlent++;
 	}
-/* Append the src string to the end of the dest string */
-	while (*src)
+
+	for (k = 0; src[k] != 0; k++)
 	{
-		*end = *src;
-		src++;
-		end++;
+		dest[dlent] = src[k];
+		dlent++;
 	}
-/* Add a terminating null byte to the end of the dest string */
-	*end = '\0';
-/* Return a pointer to the resulting string dest */
+	dest[dlent] = '\0';
 	return (dest);
 }

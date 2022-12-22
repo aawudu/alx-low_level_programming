@@ -1,44 +1,22 @@
 #include "main.h"
 /**
-  * _strcmp - Compares two strings
-  * @s1: The first string
-  * @s2: The second string
-  *
-  * Return: int value
-  */
+  * _strcmp - appends the src string to the dest string
+  * @s1: destination char
+  * @s2: source char
+  * Return: comparison
+ **/
 int _strcmp(char *s1, char *s2)
 {
-	int ai = 0, bi = 0, ci = 0, ri = 0, lit;
+	int num = 0, i = 0;
 
-	while (s1[ai])
+	while (s1[i] != '\0' && s2[i] != '\0')
 	{
-		ai++;
-	}
-	while (s2[bi])
-	{
-		bi++;
-	}
-	if (ai <= bi)
-	{
-		lit = ai;
-	}
-	else
-	{
-		lit = bi;
-	}
-	while (ci <= lit)
-	{
-		if (s1[ci] == s2[ci])
+		if (s1[i] != s2[i])
 		{
-			ci++;
-			continue;
+			num = s1[i] - s2[i];
+			return (num);
 		}
-		else
-		{
-			r = s1[ci] - s2[ci];
-			break;
-		}
-		ci++;
+		i++;
 	}
-	return (ri);
+	return (num);
 }

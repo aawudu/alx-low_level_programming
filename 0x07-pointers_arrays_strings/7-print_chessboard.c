@@ -14,10 +14,10 @@ void print_chessboard(char (*a)[8])
 		j = 0;
 		while (j < 8)
 		{
-			_putchar(a[i][j]);
+			printf("%d", a[i][j]);
 			j++;
 		}
-		_putchar('\n');
+		printf("%d\n");
 		i++;
 	}
 }

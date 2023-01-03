@@ -5,7 +5,7 @@
  * @a: the board to print
  * Return: always 0 success
  */
-void print_chessboard(char(*a)[8])
+void print_chessboard(char (*a)[8])
 {
 	int bee, cee;
 

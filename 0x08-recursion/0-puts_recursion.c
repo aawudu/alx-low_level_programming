@@ -2,9 +2,6 @@
 #include "main.h"
 /*
  * _puts_recursion - Prints string, and a new  line.
- *
- * Description: 'Function prints string and a new line.'
- *
  * @s: string to print
  */
 void _puts_recursion(char *s)

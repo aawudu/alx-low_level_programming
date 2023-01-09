@@ -9,11 +9,9 @@
  */
 int main(int argc, char **argv)
 {
-	int koko = 0;
-
-	for (; koko < argc; koko++)
+	if (argc > 0)
 	{
-		printf("argv[%d] = %s\n", koko, argv[koko]);
+		printf("%s\n", *argv);
 	}
 	return (0);
 }
